@@ -6,7 +6,7 @@ loc = location.country_name;
 });
 //brightcove videos setup
 setInterval(function(){
-if($('#done').length < 1){
+if($('#done').length < 1 && $('.brightcoveVid').length){
 $('.brightcoveVid').append('<div id="done" data-experience="60ece268c9511300228980c7"></div>');
 var sc = document.createElement("script");
 sc.setAttribute("src", "https://players.brightcove.net/6057994540001/experience_60ece268c9511300228980c7/live.js");
